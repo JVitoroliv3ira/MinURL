@@ -1,0 +1,23 @@
+<header class="w-full bg-white flex items-center justify-between p-5 shadow-md">
+  <a class="text-xl text-accent font-bold" [routerLink]="['/']">MinUrl</a>
+
+  <button class="lg:hidden text-primary focus:outline-none" (click)="toggleMenu()">
+    <fa-icon [icon]="isMenuOpen() ? faTimes : faBars" size="lg"></fa-icon>
+  </button>
+
+  <div class="hidden lg:flex gap-5">
+    @for (link of links(); track link) {
+      <a class="hover:text-primary transition" [routerLink]="[link.path]">
+        {{ link.label }}
+      </a>
+    }
+  </div>
+</header>
+
+<div [class.hidden]="!isMenuOpen()" class="w-full bg-white flex flex-col items-center gap-3 py-4 shadow-lg lg:hidden">
+  @for (link of links(); track link) {
+    <a class="hover:text-primary transition text-lg" [routerLink]="[link.path]" (click)="closeMenu()">
+      {{ link.label }}
+    </a>
+  }
+</div>
