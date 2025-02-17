@@ -16,7 +16,9 @@
       "launchUrl": "swagger",
       "applicationUrl": "http://localhost:5114",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "CONNSTR_MIGRATIONS": "Server=localhost;Database=MIN_URL;User=M_MIN_URL;Password=@myStrongPassword;Encrypt=True;TrustServerCertificate=True;",
+        "CONNSTR_APPLICATION": "Server=localhost;Database=MIN_URL;User=A_MIN_URL;Password=@myStrongPassword;Encrypt=True;TrustServerCertificate=True;"
       }
     },
     "IIS Express": {
