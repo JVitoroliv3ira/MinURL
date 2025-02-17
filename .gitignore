@@ -1,0 +1,119 @@
+# Node.js e Angular
+node_modules/
+dist/
+tmp/
+out-tsc/
+coverage/
+.angular/
+.npm/
+.nvmrc
+.idea/
+.vscode/
+.DS_Store
+*.log
+*.lock
+
+# Ambientes e Configurações Sensíveis
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.log
+
+# Configuração do Editor
+/.vscode/
+/.idea/
+/*.sublime-workspace
+
+# Arquivos do Sistema
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Docker
+docker-compose.override.yml
+docker-compose.override.yaml
+
+# FRONTEND (Angular)
+frontend/node_modules/
+frontend/dist/
+frontend/tmp/
+frontend/out-tsc/
+frontend/.angular/
+frontend/.env
+frontend/.env.local
+frontend/.env.production
+frontend/.env.development
+frontend/.env.test
+frontend/coverage/
+
+# BACKEND (.NET Core)
+backend/bin/
+backend/obj/
+backend/.vs/
+backend/.idea/
+backend/.vscode/
+backend/*.db
+backend/*.db-journal
+backend/appsettings*.json
+backend/appsettings*.Development.json
+backend/secrets/
+backend/Migrations/
+
+# Arquivos do NuGet
+*.nupkg
+*.snupkg
+.nuget/
+
+# Build do .NET
+backend/Debug/
+backend/Release/
+backend/.temp/
+backend/_ReSharper.Caches/
+
+# Arquivos temporários do Visual Studio
+*.user
+*.suo
+*.cache
+*.csproj.user
+*.sln.cache
+*.sln.ide
+.vscode/
+.vs/
+
+# Arquivos de cobertura de testes
+backend/coverage/
+backend/TestResults/
+backend/*.coverage
+backend/*.coveragexml
+backend/*.trx
+
+# Configurações locais e segredos
+backend/appsettings.local.json
+backend/secrets/
+backend/*.pfx
+backend/*.key
+backend/*.crt
+
+# Logs e dados temporários
+backend/logs/
+backend/*.log
+backend/*.bak
+backend/.DS_Store
+
+# Certificados SSL gerados pelo .NET CLI
+backend/.aspnet/
+backend/.microsoft/
+
+# Arquivos de cache e pacotes locais do NuGet
+.nuget/
+packages/
+project.lock.json
